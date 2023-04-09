@@ -17,9 +17,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
-#include <dt-bindings/zmk/mouse.h>
-
-#define ___ &trans
 
 / {
   behaviors {
@@ -69,8 +66,8 @@
   &trans   &trans   &trans      &trans            &trans                        &trans  &trans  &trans                  &trans  &trans  &trans                         &trans        &trans   &trans   &trans   &trans
             >;
         };
-        
-                layer_mod {
+
+        layer_mod {
             bindings = <
   &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                             &none                                                                              &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &none
   &none         &none         &none         &none         &none         &none                       &bootloader                                                                         &bootloader         &none         &none         &none         &none         &none   &none
@@ -80,7 +77,5 @@
             >;
         };
 
-
-  }
-
+    };
 };
